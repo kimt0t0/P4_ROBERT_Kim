@@ -52,7 +52,9 @@ a:hover {
     padding: 50px;
 }
 
-.bloc-sm {
+.header-title {
+    width: 20%;
+    height: auto;
     padding: 20px 50px;
 }
 
@@ -867,7 +869,6 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .page-container,
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
@@ -890,10 +891,6 @@ h4 {
 }
 
 @media (max-width: 767px) {
-    .page-container {
-        overflow-x: hidden;
-        position: relative;
-    }
     h1,
     h2,
     h3,
@@ -913,7 +910,7 @@ h4 {
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
     }
-    .navbar.row {
+    .navbar-header {
         margin-left: 0;
         margin-right: 0;
     }
@@ -982,7 +979,7 @@ h4 {
     .bloc-lg {
         padding: 40px 0;
     }
-    .bloc-sm,
+    .header-title, 
     .bloc-md {
         padding-left: 0;
         padding-right: 0;
