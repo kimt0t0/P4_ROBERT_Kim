@@ -1,10 +1,17 @@
-body {
+@font-face {
+    font-family: Merienda;
+    src: url('./fonts/Merienda-Regular.ttf') format('ttf');
+
+}body {
     margin: 0;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #575757!important;
 }
 
 a,
@@ -52,10 +59,32 @@ a:hover {
     padding: 50px;
 }
 
+.header {
+    height: 30em;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
 .header-title {
-    width: 20%;
-    height: auto;
-    padding: 20px 50px;
+    font-family: Open-sans;
+    font-size: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header-title .agence-name {
+    font-size: 36px;
+    font-family: Merienda;
+}
+
+.header-info {
+    font-family: Open-sans;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2;
+    color: #FFFFFF;
 }
 
 .bg-center,
@@ -80,21 +109,6 @@ a:hover {
 
 .bg-t-edge {
     background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -128,7 +142,6 @@ a:hover {
 .d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
-.d-bloc h1 a,
 .d-bloc h2 a,
 .d-bloc h3 a,
 .d-bloc h4 a,
@@ -145,7 +158,6 @@ a:hover {
 .d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
-.d-bloc h1 a:hover,
 .d-bloc h2 a:hover,
 .d-bloc h3 a:hover,
 .d-bloc h4 a:hover,
@@ -155,9 +167,6 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
-}
 
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
@@ -226,7 +235,6 @@ a:hover {
 .l-bloc a .icon-md,
 .l-bloc a .icon-lg,
 .l-bloc a .icon-xl,
-.l-bloc h1 a,
 .l-bloc h2 a,
 .l-bloc h3 a,
 .l-bloc h4 a,
@@ -244,7 +252,6 @@ a:hover {
 .l-bloc a:hover .icon-md,
 .l-bloc a:hover .icon-lg,
 .l-bloc a:hover .icon-xl,
-.l-bloc h1 a:hover,
 .l-bloc h2 a:hover,
 .l-bloc h3 a:hover,
 .l-bloc h4 a:hover,
@@ -252,10 +259,6 @@ a:hover {
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
     color: rgba(0, 0, 0, 1);
-}
-
-.l-bloc .navbar-toggle .icon-bar {
-    color: rgba(0, 0, 0, .6);
 }
 
 .d-bloc .panel .btn-wire,
@@ -283,10 +286,6 @@ a:hover {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
-}
-
-#bloc-1-hero h1 {
-    font-size: 32px;
 }
 
 .navbar {
@@ -339,76 +338,34 @@ a:hover {
     background: transparent;
 }
 
-.navbar-toggle {
-    margin: 10px 10px 0 0;
-    border: 0px;
-}
-
-.navbar-toggle:hover {
-    background: transparent!important;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
-    width: 26px;
-}
-
 .nav-invert .navbar .nav {
     float: left;
 }
 
-.nav-invert .navbar-header,
+.navbar-header,
 .nav-invert .navbar-brand {
-    float: right;
-    position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
     }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: relative;
         width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
+        margin: 0;
+        padding: 5em;
     }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
+    .navbar-header {
+        display: flex;
     }
-}
-
-.nav > li > .dropdown a {
-    background: none!important;
-    display: block;
-    padding: 14px 15px;
 }
 
 nav .caret {
@@ -641,27 +598,8 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
-}
-
 .container {
     max-width: 1000px;
-}
-
-.hero-bloc-text {
-    font-size: 38px;
 }
 
 .hero-bloc-text-sub {
@@ -678,18 +616,9 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
-
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
-}
-
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
 }
 
 .cta-hero {
@@ -722,10 +651,6 @@ h3 {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-    color: #333333!important;
 }
 
 h4 {
@@ -774,10 +699,6 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
-}
-
-.tc-white {
-    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
@@ -891,7 +812,6 @@ h4 {
 }
 
 @media (max-width: 767px) {
-    h1,
     h2,
     h3,
     h4,
@@ -910,23 +830,11 @@ h4 {
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
     }
-    .navbar-header {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .site-navigation {
-        position: inherit;
-        transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
-    }
-    .nav > li {
-        margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
-        text-align: left;
-        padding-left: 15px;
-        width: 100%;
+    .header {
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
@@ -961,14 +869,6 @@ h4 {
     .navbar-brand img {
         max-height: 40px;
         width: auto;
-    }
-    .nav-invert .navbar-header {
-        float: none;
-        width: 100%;
-    }
-    .nav-invert .navbar-toggle {
-        float: left;
-        margin-left: 10px;
     }
     .bloc {
         padding-left: 0;
