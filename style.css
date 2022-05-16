@@ -432,6 +432,50 @@ a:hover {
     justify-content: center;
 }
 
+.footer {
+    background-color: #DF6D14;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: Open-sans;
+    padding: 2em;
+}
+
+.footer-title {
+    font-size: 28px;
+    text-align: center;
+}
+.footer-title, .list-partners {
+    color: #FFFFFF;
+    list-style-type: none;
+}
+
+.list-partners {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    line-height: 4.5;
+}
+
+.list-partners.__item {
+    width: 10em;
+    height: 3em;
+    background-color: rgba(19, 87, 141, 0.8);
+    border: rgba(7, 34, 56, 1) solid 3px;
+    border-radius: 3em;
+    box-shadow: 5px 3px 3px 0px black;
+    font-size: 20px;
+    transition-duration: all 1000ms ease;
+}
+
+.list-partners.__item:hover {
+    transform: scale(1.1);
+    background-color: rgba(13, 60, 98, 1);
+    border: rgba(5, 26, 42, 1) solid 3px;
+}
+
 @media (min-width: 768px) {
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -746,10 +790,6 @@ h3 {
     justify-content: center;
 }
 
-h4 {
-    color: #333333!important;
-}
-
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -799,6 +839,7 @@ h4 {
 .btn-atomic-tangerine {
     background: #DF6D14;
     color: #FFFFFF!important;
+    box-shadow: 5px 3px 3px 0px black;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1037,6 +1078,16 @@ h4 {
     .display-portfolio {
         flex-direction: column;
         align-items: center;
+    }
+    .footer ul {
+        height: 25em;
+    }
+    .footer-title {
+        margin: 0;
+    }
+    .footer .list-partners {
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
 

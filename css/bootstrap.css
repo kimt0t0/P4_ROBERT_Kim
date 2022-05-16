@@ -1410,12 +1410,6 @@ a {
     text-decoration: none
 }
 
-a:focus,
-a:hover {
-    color: #23527c;
-    text-decoration: underline
-}
-
 a:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -1568,7 +1562,6 @@ h3 small {
 .h4,
 .h5,
 .h6,
-h4,
 h5,
 h6 {
     margin-top: 10px;
