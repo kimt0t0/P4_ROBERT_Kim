@@ -1,7 +1,6 @@
 @font-face {
     font-family: "Merienda";
-    src: url("./fonts/Merienda-Regular.ttf") format("ttf");
-    src: url("./fonts/Merienda-Bold.ttf") format("ttf");
+    src: url("./fonts/Merienda-Regular.ttf");
 }
 
 body {
@@ -28,6 +27,10 @@ main {
 .section {
     box-sizing: border-box;
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
 }
 
 a,
@@ -76,7 +79,7 @@ a:hover {
 }
 
 .header {
-    height: 30em;
+    height: fit-content;
     margin: 0;
     padding: 1em;
     display: flex;
@@ -84,15 +87,18 @@ a:hover {
 }
 
 .header-title {
-    font-family: Open-sans;
-    font-size: 26px;
+    font-family:  "Merienda", Open-sans;
+    font-size: 36px;
     text-align: center;
     color: #FFFFFF;
+    padding: 0.25em 0 1em 0;
+    margin: 0;
 }
 
 .header-title .agence-name {
-    font-size: 36px;
+    font-size: 24px;
     font-family: "Merienda", Open-sans;
+    font-weight: bold;
 }
 
 .header-info {
@@ -101,6 +107,8 @@ a:hover {
     text-align: center;
     line-height: 1.2;
     color: #FFFFFF;
+    padding-bottom: 1em;
+    margin: 0;
 }
 
 .bg-center,
@@ -373,11 +381,10 @@ a:hover {
     .header {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        position: relative;
-        width: 100%;
+        align-content: center;
+        align-items: center;
         margin: 0;
-        padding: 5em;
+        padding: 2em;
     }
     .navbar-header {
         display: flex;
@@ -670,6 +677,11 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
+.display-contact-link {
+    display: flex;
+    justify-content: center;
+}
+
 h4 {
     color: #333333!important;
 }
@@ -696,9 +708,10 @@ h4 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+.blue-background {
+    background-color: rgba(32, 146, 235, 0.6);
+    padding: 2em 1.5em;
+    border-radius: 1em;
 }
 
 .bold-link {
@@ -716,13 +729,13 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #BA5D00;
+    background: #DF6D14;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
     transform: scale(1.1);
-    background: #944A00!important;
+    background: #BA5D00!important;
     color: #FFFFFF!important;
 }
 
@@ -738,6 +751,10 @@ h4 {
     color: #F3976C!important;
 }
 
+.ltc-orange-strong {
+    color: #DF6D14;
+}
+
 .ltc-atomic-tangerine:hover {
     color: #c27956!important;
 }
@@ -751,16 +768,8 @@ h4 {
     background-image: url("img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
-}
-
-.bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {

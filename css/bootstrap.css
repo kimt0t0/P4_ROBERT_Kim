@@ -1547,8 +1547,7 @@ h6 small {
 h1,
 h2,
 h3 {
-    margin-top: 20px;
-    margin-bottom: 10px
+    line-height: 1.2;
 }
 
 .h1 .small,
@@ -7793,9 +7792,7 @@ button.close {
 }
 
 .header-logo {
-    display: block;
-    margin-right: auto;
-    margin-left: auto
+    display: flex;
 }
 
 .pull-right {
