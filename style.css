@@ -316,6 +316,66 @@ a:hover {
     z-index: 1;
 }
 
+.navbar.__social {
+    background-color: rgba(223, 109, 20, 0.6);
+    overflow: hidden;
+    position: fixed;
+    right: 2em;
+    width: 4em;
+    height: fit-content;
+    padding: 0.75em 0.5em 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-social-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    z-index: 1;
+}
+
+.navbar-social-item {
+    list-style-type: none;
+    display: flex;
+    justify-items: center;
+    padding: 0.25em;
+}
+
+.social-button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-width: 3em;
+    min-height: 3em;
+    border-radius: 1em;
+    transition-duration: all 1000ms ease-in-out;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+.fa {
+    font-size: 2em !important;
+}
+
+.fa-twitter {
+    color: rgb(41, 170, 227);
+}
+
+.fa.facebook {
+    color: rgb(55, 40, 182)
+}
+
+.fa-instagram {
+    color: transparent;
+    background: linear-gradient(to bottom right, #C0009F, #FBAA1A);
+    background-clip: text;
+}
+
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
@@ -454,10 +514,6 @@ button {
     border-bottom-color: rgba(0, 0, 0, .1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
-}
-
-.icon-md {
-    font-size: 30px!important;
 }
 
 .icon-lg {
@@ -868,6 +924,17 @@ h4 {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
+    }
+    .navbar.__social {
+        align-self: center;
+        position: relative;
+        right: 0;
+        width: 100%;
+    }
+    .navbar-social-list {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .header {
         height: 30em;
