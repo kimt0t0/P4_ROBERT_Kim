@@ -32,6 +32,28 @@ main {
     align-content: center;
 }
 
+.section.__invitation {
+    border-radius: 0;
+}
+
+.__contact-form {
+    width: 50%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5em;
+}
+
+.contact-form-display {
+    padding: 1.5em;
+}
+
+.display-button {
+    display: flex;
+    justify-content: center;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -313,7 +335,7 @@ a:hover {
 
 .navbar {
     margin-bottom: 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 .navbar.__social {
@@ -354,7 +376,7 @@ a:hover {
     transition-duration: all 1000ms ease-in-out;
 }
 
-.social-button:hover {
+.social-button:hover, .social-button:focus {
     transform: scale(1.1);
 }
 
@@ -368,6 +390,10 @@ a:hover {
 
 .fa.facebook {
     color: rgb(55, 40, 182)
+}
+
+.fa-dribbble {
+    color: rgb(231, 77, 137);
 }
 
 .fa-instagram {
@@ -470,7 +496,7 @@ a:hover {
     transition-duration: all 1000ms ease;
 }
 
-.list-partners.__item:hover {
+.list-partners.__item:hover, .list-partners.__item:focus {
     transform: scale(1.1);
     background-color: rgba(13, 60, 98, 1);
     border: rgba(5, 26, 42, 1) solid 3px;
@@ -558,6 +584,11 @@ button {
     border-bottom-color: rgba(0, 0, 0, .1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+}
+
+.contact-form-btn {
+    border-radius: 2em;
+    width: 10em;
 }
 
 .icon-lg {
@@ -760,6 +791,14 @@ a[data-lightbox]:hover img {
     font-size: 22px;
     text-align: center;
     white-space: normal;
+    line-height: 2;
+}
+
+section.__local-presentation {
+    max-width: 800px;
+    display: flex;
+    justify-self: center;
+    margin: auto auto 3em auto;
 }
 
 h3 {
@@ -842,7 +881,7 @@ h3 {
     box-shadow: 5px 3px 3px 0px black;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
     transform: scale(1.1);
     background: #BA5D00!important;
     color: #FFFFFF!important;
@@ -945,8 +984,18 @@ h3 {
 }
 
 @media (max-width: 767px) {
+    .header {
+        padding: 4em;
+    }
     .section {
-        padding: 0;
+        padding: 1em;
+    }
+    .section.__local-presentation {
+        margin-bottom: 0;
+        padding-bottom: 3em;
+    }
+    .__contact-form {
+        width: 95%;
     }
     h2,
     h3,
@@ -1039,10 +1088,6 @@ h3 {
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding-left: 0;
         padding-right: 0;
-    }
-    #bloc-1-hero {
-        border-bottom-left-radius: 1em;
-        border-bottom-right-radius: 1em;
     }
     .blue-background {
         border-radius: 0;
