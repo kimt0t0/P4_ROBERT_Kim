@@ -49,6 +49,12 @@ main {
     padding: 1.5em;
 }
 
+.contact-form-label {
+    font-size: 18px;
+    padding-right: 1.5em;
+    text-align: start;
+}
+
 .display-button {
     display: flex;
     justify-content: center;
@@ -792,6 +798,11 @@ a[data-lightbox]:hover img {
     text-align: center;
     white-space: normal;
     line-height: 2;
+}
+
+.contact-secondary-title {
+    font-size: 22px;
+    line-height: 1;
 }
 
 section.__local-presentation {

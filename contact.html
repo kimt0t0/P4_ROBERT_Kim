@@ -51,12 +51,12 @@
 				<h1 class="primary-title text-center white">
 					Formulaire de contact
 				</h1>
-				<h2 class="secondary-title text-center white">
+				<h2 class="contact-secondary-title text-center white">
 					Parlons web design !
 				</h2>
 				<p class="text-center white">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br />
-					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+					<strong>Parlez-nous de votre projet</strong> en complétant le formulaire ci-dessous.
 				</p>
 </section>
 <!-- Section 1 - END -->
@@ -66,23 +66,23 @@
 	<form id="__contact-form" novalidate success-msg="Votre demande a bien été envoyée." fail-msg="Toutes nos excuses, il semble que notre serveur mail ne répond pas!">
 			
 		<div class="contact-form-display">
-			<label for="name">Nom</label>
-			<input id="name" name="name" type="text" class="form-control" required />
+			<label for="name" class="contact-form-label">Nom:</label>
+			<input id="name" name="name" type="text" class="form-control" placeholder="Kim Robert" required />
 		</div>
 
 		<div class="contact-form-display">
-			<label for="email">Adresse email</label>
-			<input id="email" name="email" class="form-control" type="email" required />
+			<label for="email" class="contact-form-label">Adresse email:</label>
+			<input id="email" name="email" class="form-control" type="email" placeholder="kimrobert.nb@gmail.com" required />
 		</div>
 
 		<div class="contact-form-display">
-			<label for="discovered">Comment nous avez-vous connu ?</label>
-			<input id="discovered" name="discovered" type="text" class="form-control" required />
+			<label for="discovered" class="contact-form-label">Comment nous avez-vous connu ?</label>
+			<input id="discovered" name="discovered" type="text" class="form-control" placeholder="Par mon école." required />
 		</div>
 
 		<div class="contact-form-display">
-			<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
-			<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+			<label for="message" class="contact-form-label">Brief de votre projet:<br></label>
+			<textarea id="message" class="form-control" rows="4" cols="50"  placeholder="Devenir un super-dev-kikoo-de-la-mort-qui-tue!" required></textarea>
 		</div>
 			
 		<div class="display-button">
