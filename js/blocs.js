@@ -134,7 +134,7 @@ function setUpLightBox() {
         t.preventDefault(), targetLightbox = $(this);
         var e = targetLightbox.attr("data-lightbox"),
             i = targetLightbox.attr("data-autoplay"),
-            a = '<p class="lightbox-caption">' + targetLightbox.attr("data-caption") + "</p>",
+            a = '<h4 class="lightbox-caption">' + targetLightbox.attr("data-caption") + "</h4>",
             o = "no-gallery-set",
             l = targetLightbox.attr("data-frame");
         targetLightbox.attr("data-gallery-id") && (o = targetLightbox.attr("data-gallery-id")), targetLightbox.attr("data-caption") || (a = "");
