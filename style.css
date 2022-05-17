@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Merienda";
     src: url("./fonts/Merienda-Regular.ttf");
+    font-display: swap;
 }
 
 body {
@@ -345,8 +346,36 @@ a:hover {
     z-index: 10;
 }
 
+.index-nav {
+    width: 80%;
+    height: 4em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(22, 10, 2, 0.5);
+    border-radius: 0.15em;
+}
+
+.index-nav-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.index-nav-list {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.index-nav-link:hover {
+    transition-duration: all 600ms ease-in-out;
+    color: #DF6D14!important;
+}
+
 .navbar.__social {
-    background-color: rgba(223, 109, 20, 0.6);
+    background-color: rgba(223, 109, 20, 0.8);
     overflow: hidden;
     position: fixed;
     right: 2em;
@@ -377,7 +406,7 @@ a:hover {
 .social-button {
     border: none;
     background-color: rgb(255, 255, 255);
-    opacity: 0.6;
+    opacity: 0.8;
     min-width: 3em;
     min-height: 3em;
     border-radius: 1em;
@@ -387,7 +416,7 @@ a:hover {
 
 .social-button:hover, .social-button:focus {
     transform: scale(1.1);
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 .fa {
@@ -410,6 +439,18 @@ a:hover {
     color: transparent;
     background: linear-gradient(to bottom right, #C0009F, #FBAA1A);
     background-clip: text;
+}
+
+.internal-backlink {
+    font-size: 26px;
+    color: #DF6D14;
+    opacity: 0.85;
+    padding-right: 0.5em;
+    transition-duration: all 800ms ease-in-out;
+}
+
+.internal-backlink:hover {
+    opacity: 1;
 }
 
 .navbar-brand {
@@ -600,6 +641,10 @@ button {
     width: 10em;
 }
 
+.contact-display {
+    padding: 1em;
+}
+
 .icon-lg {
     font-size: 60px!important;
 }
@@ -786,7 +831,7 @@ a[data-lightbox]:hover img {
 }
 
 .portfolio-article {
-    max-width: 20em;
+    max-width: 17em;
     max-height: 35em;
 }
 
