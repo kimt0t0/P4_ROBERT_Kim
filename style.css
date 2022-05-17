@@ -375,7 +375,7 @@ a:hover {
 }
 
 .navbar.__social {
-    background-color: rgba(223, 109, 20, 0.8);
+    background-color: rgba( 20 , 223 , 109, 0.8);
     overflow: hidden;
     position: fixed;
     right: 2em;
@@ -428,7 +428,7 @@ a:hover {
 }
 
 .fa-facebook {
-    color: rgb(55, 40, 182)
+    color: rgb( 61 , 96 , 176);
 }
 
 .fa-dribbble {
@@ -442,11 +442,17 @@ a:hover {
 }
 
 .internal-backlink {
+    display: flex;
+    padding-right: 0.5em;
     font-size: 26px;
     color: #DF6D14;
     opacity: 0.85;
-    padding-right: 0.5em;
     transition-duration: all 800ms ease-in-out;
+}
+
+.internal-backlink .fa-solid {
+    display: flex;
+    align-self: center;
 }
 
 .internal-backlink:hover {
@@ -642,7 +648,10 @@ button {
 }
 
 .contact-display {
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 .icon-lg {
@@ -702,22 +711,20 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+.lightbox-link:hover::before {
+    z-index: 1;
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
-    width: 50px;
-    height: 50px;
-    margin-left: -25px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, .6);
-    color: #FFF;
     font-weight: 100;
-    z-index: 1;
+    border-radius: 50%;
+    background: rgba( 223 , 109 , 20, .7);
+    color: #FFFFFF;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    padding: 0.35em 0.7em;
 }
 
 a[data-lightbox]:hover img {
@@ -848,12 +855,17 @@ a[data-lightbox]:hover img {
     margin: auto auto auto auto;
 }
 
+.display-secondary-title {
+    display: flex;
+    align-self: center;
+    height: fit-content;
+}
+
 .index-secondary-title {
     text-align: center;
     font-size: 26px;
     white-space: normal;
     line-height: 1.5;
-    padding-bottom: 0.5em;
 }
 
 .contact-secondary-title {
@@ -889,11 +901,6 @@ h3 {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
-}
-
-.display-contact-link {
-    display: flex;
-    justify-content: center;
 }
 
 .icons {
