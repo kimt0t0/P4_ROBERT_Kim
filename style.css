@@ -374,7 +374,7 @@ a:hover {
 }
 
 .index-nav-link:hover {
-    transition-duration: all 600ms ease-in-out;
+    transition-duration: 600ms ease-in-out;
     color: #DF6D14!important;
 }
 
@@ -397,7 +397,7 @@ a:hover {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-items: space-between;
+    justify-items: center;
     z-index: 1;
 }
 
@@ -416,7 +416,7 @@ a:hover {
     min-height: 3em;
     border-radius: 1em;
     display: flex;
-    transition-duration: all 1000ms ease-in-out;
+    transition-duration: 1000ms ease-in-out; /* does not work? */
 }
 
 .social-button:hover, .social-button:focus {
@@ -444,6 +444,7 @@ a:hover {
     color: transparent;
     background: linear-gradient(to bottom right, #C0009F, #FBAA1A);
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .internal-backlink {
@@ -451,7 +452,7 @@ a:hover {
     padding-right: 0.5em;
     font-size: 26px;
     color: #F4661B;
-    transition-duration: all 800ms ease-in-out;
+    transition-duration: 800ms ease-in-out;
 }
 
 .internal-backlink .fa-solid {
@@ -556,7 +557,7 @@ a:hover {
     border-radius: 3em;
     box-shadow: 5px 3px 3px 0px black;
     font-size: 20px;
-    transition-duration: all 1000ms ease;
+    transition-duration: 1000ms ease;
 }
 
 .list-partners.__btn:hover, .list-partners.__btn:focus {
@@ -1065,13 +1066,13 @@ h3 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1088,20 +1089,10 @@ h3 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
