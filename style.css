@@ -125,8 +125,8 @@ a:hover {
 }
 
 .header-logo {
-    width: 7em;
-    height: auto;
+    width: 112px;
+    height: 112px;
 }
 
 .header-title {
@@ -1046,6 +1046,10 @@ h3 {
     .blue-background {
         border-radius: 0;
     }
+    .display-secondary-title {
+        flex-direction: column;
+        align-items: center;
+    }
     .__contact-form {
         width: 95%;
     }
@@ -1058,6 +1062,10 @@ h3 {
     }
     .portfolio-article {
         max-width: 10em;
+    }
+    .img-responsive {
+        width: 10em;
+        height: auto;
     }
     .text-container {
         height: 17em;
@@ -1228,6 +1236,10 @@ h3 {
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding-left: 0;
         padding-right: 0;
+    }
+    .display-secondary-title {
+        flex-direction: column;
+        align-items: center;
     }
     .index-secondary-title {
         font-size: 22px;
