@@ -463,8 +463,8 @@ a:hover {
     border-radius: 50%;
 }
 
-.internal-backlink:hover {
-    transform: scale(1.1);
+.internal-backlink:hover, .internal-backlink:focus {
+    transform: scale(1.2);
 }
 
 .navbar-brand {
@@ -524,11 +524,12 @@ a:hover {
 }
 
 .footer {
+    width: 100%;
     background-color: #DF6D14;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     padding: 2em;
 }
 
@@ -541,17 +542,17 @@ a:hover {
     list-style-type: none;
 }
 
-.list-partners {
-    width: 75%;
+
+.footer .list-partners {
     display: flex;
-    justify-content: space-around;
-    align-self: center;
-    line-height: 4.5;
+    justify-content: center;
+    align-items: center;
 }
 
-.list-partners.__btn {
-    width: 10em;
-    height: 3em;
+.list-partners.__link {
+    min-width: 200px;
+    height: 50px;
+    margin: 0 1.5em;
     background-color: rgba(19, 87, 141, 0.8);
     border: rgba(7, 34, 56, 1) solid 3px;
     border-radius: 3em;
@@ -560,7 +561,7 @@ a:hover {
     transition-duration: 1000ms ease;
 }
 
-.list-partners.__btn:hover, .list-partners.__btn:focus {
+.list-partners.__link:hover, .list-partners.__link:focus {
     transform: scale(1.1);
     background-color: rgba(13, 60, 98, 1);
     border: rgba(5, 26, 42, 1) solid 3px;
@@ -719,7 +720,7 @@ a[data-lightbox] {
     text-align: center;
 }
 
-.lightbox-link:hover::before {
+.lightbox-link:hover::before, .lightbox-link:focus::before {
     z-index: 1;
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
@@ -735,7 +736,7 @@ a[data-lightbox] {
     padding: 0.35em 0.7em;
 }
 
-a[data-lightbox]:hover img {
+a[data-lightbox]:hover img,a[data-lightbox]:focus img  {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
@@ -1051,7 +1052,8 @@ h3 {
     .list-partners {
         width: 100%;
     }
-    .list-partners.__btn {
+    .list-partners.__link {
+        color: #FFFFFF;
         font-size: 16px;
     }
     .portfolio-article {
@@ -1060,9 +1062,12 @@ h3 {
     .text-container {
         height: 17em;
     }
-    .lightbox-link:hover::before {
+    .lightbox-link:hover::before, .lightbox-link:focus::before {
         top: 30%;
         left: 30%;
+    }
+    .list-partners.__link {
+        min-width: 150px;
     }
 }
 
@@ -1266,7 +1271,7 @@ h3 {
     form {
         padding: 5px;
     }
-    .lightbox-link:hover::before {
+    .lightbox-link:hover::before .lightbox-link:focus::before {
         top: 37%;
         left: 37%;
     }
@@ -1295,8 +1300,5 @@ h3 {
         justify-content: space-evenly;
         align-items: center;
         width: 12em;
-    }
-    .list-partners.__link {
-        color: #FFFFFF;
     }
 }
