@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design">
     <meta name="description" content="La Panthère, agence de web design basée à Lyon. Experts en stratégie, conception, création, illustration et refonte de sites web personnels et professionnels: voyages, mariages, famille, photographie, journalisme...">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.jpg">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.webp">
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -18,26 +18,38 @@
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
 	<script src="./js/gmaps.js"></script>
+	<script src="https://kit.fontawesome.com/a553f5b38f.js" crossorigin="anonymous"></script>
 
 	<meta name="google-site-verification" content="4tGUHJxULrU8PWKlzNRpAYKOfHGLYfRUpAdhwq2Nmf0" />
 
     <title>La Panthère - Web Design</title>
     
 </head>
+
+
 <body>
 
 <!-- Header -->
-<header class="header bgc-dark-slate-blue bg-banniere d-bloc b-parallax" id="bloc-1-hero">
-	<img src="img/logo.png" class="header-logo" width="100" alt="Logo La Panthère, agence Web Design." />
+<header class="header bgc-dark-slate-blue bg-banniere d-bloc b-parallax" id="header">
+	<img src="img/logo.avif" class="header-logo" width="100" alt="Logo La Panthère, agence Web Design." />
 
 	<h1 class="header-title"><strong class="agence-name">La Panthère</strong><br />Agence Web Design à Lyon</h1>
-	<p class="header-info">
+	<p class="header-info text-center white">
 		2, Place Sathonay<br />
 		Du lundi au vendredi de 9h à 18h<br />
+	</p>
+
+		
+	<div class="contact-display">
+		<a href="contact.html" class="btn btn-clean btn-rd cta-hero btn-atomic-tangerine" title="Vers la page de contact">Contactez notre équipe!</a>
 	</div>
 
-	<nav class="navbar-header">
-			<a href="contact.html" class="btn btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+	<nav class="index-nav" title="Navigation interne de la page">
+		<ul class="index-nav-list">
+			<li class="index-nav-elt"><a href="#general-presentation" class="index-nav-link text-center white" title="Lien interne vers: Présentation générale">Présentation générale</a></li>
+			<li class="index-nav-elt"><a href="#local-presentation" class="index-nav-link text-center white" title="Lien interne vers: Entreprises lyonnaises">Entreprises lyonnaises</a></li>
+			<li class="index-nav-elt"><a href="#portfolio" class="index-nav-link text-center white" title="Lien interne vers: Réalisations passées">Réalisations passées</a></li>
+		</ul>
 	</nav>
 </header>
 <!-- Header END -->
@@ -46,16 +58,19 @@
 
 
 	<!-- Section 1: Présentation générale -->
-	<section class="section __general-presentation">
+	<section class="section __general-presentation" id="general-presentation">
 		
-		<h2 class="index-secondary-title">Aider les entreprises à devenir attractives et visibles sur internet</h2>
+		<span class="display-secondary-title">
+			<a href="#header" class="internal-backlink" title="Retour en haut de la page"><i class="fa-solid fa-caret-up"></i><span class="hidden">Retour en haut de la page</span></a>
+			<h2 class="index-secondary-title">Aider les entreprises à devenir attractives et visibles sur internet</h2>
+		</span>
 		
 		<div class="display-articles">
 			
 			<article class="__general-presentation __article col-sm-4 text-center">
 				<div class="dark-grey-icon et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></div>
 				<h3 class="tertiary-title">Web design</h3>
-				<p class="__general-presentation __text">
+				<p class="__general-presentation __text text-justify">
 					Que vous ayez un site web qui a besoin d'un <strong>rafraîchissement ou</strong> que vous partiez <strong>de zéro,</strong> laissez-nous vous réaliser un design dont vous serez fier.
 				</p>
 			</article>
@@ -63,7 +78,7 @@
 			<article class="__general-presentation __article col-sm-4 text-center">
 				<div class="dark-grey-icon et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></div>
 				<h3 class="tertiary-title">Stratégie</h3>
-				<p class="__general-presentation __text">
+				<p class="__general-presentation __text text-justify">
 					Plutôt que de suggérer des designs à la mode, <strong>nous travaillerons avec vous pour comprendre vos objectifs commerciaux</strong> afin de vous proposer le meilleur design possible.<br>
 				</p>
 			</article>
@@ -71,7 +86,7 @@
 			<article class="__general-presentation __article col-sm-4 text-center">
 				<div class="dark-grey-icon et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></div>
 				<h3 class="tertiary-title">Illustrations</h3>
-				<p class="__general-presentation __text">
+				<p class="__general-presentation __text text-justify">
 					Un bon design n'est rien sans de bonnes <strong>illustrations.</strong> Laissez faire notre <strong>équipe de graphistes</strong> talentueux pour donner à vos pages une touche finale d'<strong>élégance</strong>.
 				</p>
 			</article>
@@ -83,71 +98,82 @@
 	<!-- Section 1 - END -->
 
 	<!-- Section 2: Présentation business locaux-->
-	<section class="section __local-presentation">
-		<article class="article-business-local container bloc-lg aside-block row tight-width-whitespace blue-background col-sm-12">
-			<h2 class="index-secondary-title white">
-				Permettre aux entreprises locales de la région Lyonnaise à se développer, attirer de nouveaux clients et réussir<br />
-			</h2>
-			<p class="text-center white">
+	<section class="section __local-presentation blue-background" id="local-presentation">
+		<span class="display-secondary-title">
+			<a href="#header" class="internal-backlink" title="Retour en haut de la page"><i class="fa-solid fa-caret-up"></i></a>
+			<h2 class="index-secondary-title white text-justify">Permettre aux entreprises locales de la région Lyonnaise de se développer, attirer de nouveaux clients et réussir</h2>
+		</span>
+		<article class="article-business-local container aside-block row tight-width-whitespace col-sm-12">
+			<p class="text-justify white">
 				Nous aimons collaborer avec des <strong>entrepreneurs créatifs</strong> et des <strong>entreprises locale.</strong>
 			</p>
-			<p class="text-center white">
+			<p class="text-justify white">
 				Que vous ayez besoin de <strong>créer un site de A à Z,</strong> d’une <strong>identité visuelle</strong> complète ou d’une <strong>refonte de votre site,</strong> n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beaux et bien structurés, qui seront <strong>facilement trouvables sur les moteurs de recherche.</strong>
 			</p>
-			<p class="text-center white"><br /><strong>Prêt pour (re)donner vie à votre projet?</strong></p>
-			<div class="display-contact-link">
-				<a href="contact.html" class="btn btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contactez notre équipe!</a>
+			<h4 class="fourth-title white">Prêt pour (re)donner vie à votre projet?</h4>
+			<div class="contact-display">
+				<a href="contact.html" class="btn btn-clean btn-rd cta-hero btn-atomic-tangerine" title="Vers la page de contact">Contactez notre équipe!</a>
 			</div>
 		</article>
 	</section>
 	<!-- Section 2 - END -->
 
-	<!-- Section 3 : Portfolio -->
-<section class="section __portfolio grey-background">
-	<h2 class="index-secondary-title">
-		Nos réalisations avec d'anciens clients
-	</h2>
+	<!-- Section 3 : Portfolio réalisations -->
+<section class="section __portfolio grey-background" id="portfolio">
+	<span class="display-secondary-title">
+		<a href="#header" class="internal-backlink" title="Retour en haut de la page"><i class="fa-solid fa-caret-up"></i></a>
+		<h2 class="index-secondary-title">Nos réalisations avec d'anciens clients</h2>
+	</span>
+	<p class="text-center">Cliquez sur les photographies pour agrandir</p>
 	
 	<div class="display-portfolio">
 		<article class="portfolio-article">
-			<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /></a>
-			<h3 class="mg-md text-center">
-				Refonte d'un site web pour un journal local
-			</h3>
-			<p class="text-center">
-				Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
-			</p>
+			<div class="text-container">
+				<h3 class="mg-md text-center">
+					Refonte d'un site web pour un journal local
+				</h3>
+				<p class="text-justify">
+					Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
+				</p>
+			</div>
+			<a href="#" class="lightbox-link" data-lightbox="img/1.avif" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.avif" class="img-responsive portfolio-thumb" alt="Agrandir la photo - Création d'une identité visuelle pour un journal lyonnais" /></a>
 		</article>
 		
 		<article class="portfolio-article">
-			<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
-			<h3 class="mg-md text-center">
-				Création d'un site web pour photographes
-			</h3>
-			<p class="text-center">
-				Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
-			</p>
+			<div class="text-container">
+				<h3 class="mg-md text-center">
+					Création d'un site web pour photographes
+				</h3>
+				<p class="text-justify">
+					Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
+				</p>
+			</div>
+			<a href="#" class="lightbox-link" data-lightbox="img/2.avif" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.avif" class="img-responsive portfolio-thumb" alt="Agrandir la photo - Plateforme pour un site de photographe" /></a>
 		</article>
 
 		<article class="portfolio-article">
-			<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
-			<h3 class="mg-md text-center">
-				Création d'un site internet pour un voyageur
-			</h3>
-			<p class="text-center">
-				Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.
-			</p>
+			<div class="text-container">
+				<h3 class="mg-md text-center">
+					Création d'un site internet pour un voyageur
+				</h3>
+				<p class="text-justify">
+					Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.
+				</p>
+			</div>
+			<a href="#" class="lightbox-link" data-lightbox="img/3.avif" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.avif" class="img-responsive portfolio-thumb" alt="Agrandir la photo - Site internet de voyageur"/></a>
 		</article>
 
 		
 		<article class="portfolio-article">
-			<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a>
-			<h3 class="mg-md text-center">
-				Conception d'un site pour une agence de mariage
-			</h3>
-			<p class="text-center">
-				Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.
-			</p>
+			<div class="text-container">
+				<h3 class="mg-md text-center">
+					Conception d'un site pour une agence de mariage
+				</h3>
+				<p class="text-justify">
+					Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.
+				</p>
+			</div>
+			<a href="#" class="lightbox-link" data-lightbox="img/4.avif" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.avif" class="img-responsive portfolio-thumb" alt="Agrandir la photo - Site internet pour détailler les prestations d'une agence" /></a>
 		</article>
 		
 	</div>
@@ -159,54 +185,41 @@
 	<ul class="navbar-social-list">
 		<li class="navbar-social-item">
 			<button class="social-button text-center" id="twitter-icon">
-				<a class="social-link" href="#" title="Lien vers la page Twitter"><span class="fa fa-twitter social-icon"></span></a>
+				<a class="social" href="index.html" title="Lien vers la page Twitter"><span class="fa fa-twitter"></span></a>
 			</button>
 		</li>
 
 		<li class="navbar-social-item">
 			<button class="social-button text-center">
-				<a class="social-link" href="#" title="Lien vers la page Facebook"><span class="fa fa-facebook social-icon"></span></a>
+				<a class="social" href="index.html" title="Lien vers la page Facebook"><span class="fa fa-facebook icon-md"></span></a>
 			</button>
 		</li>
 	
 		<li class="navbar-social-item">
-			<button class="social-button text-center" id="unknown-icon">
-				<a class="social-link" href="#" title="Lien vers réseau social"><span class="fa fa-dribbble social-icon"></span></a>
+			<button class="social-button text-center" id="dribbble-icon">
+				<a class="social" href="index.html" title="Lien vers la page Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
 			</button>
 		</li>
 	
 		<li class="navbar-social-item">
 			<button class="social-button text-center" id="instagram-icon">
-				<a class="social-link" href="#" title="Lien vers Instagram"><span class="fa fa-instagram social-icon"></span></a>
+				<a class="social" href="index.html" title="Lien vers la page Instagram"><span class="fa fa-instagram icon-md"></span></a>
 			</button>
 		</li>
 	</ul>
 </nav>
-
+<!-- Social Navbar - END -->
 </main>
 
 <!-- Footer -->
-<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="row row-no-gutters social">
-					<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4">
-						Partenaires
-							<ul>
-								<li><a href="voiture.com">voiture.com</a></li>
-								<li><a href="pizza.com">pizza.com</a></li>
-								<li><a href="matoiture.com">matoiture.com</a></li>
-								<li><a href="immobilierseo.com">immobilierseo.com</a></li>
-							</ul>		
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<footer class="footer" id="bloc-8">
+	<h4 class="fourth-title white">Nos partenaires</h4>
+		<ul class="list-partners">
+			<li class="list-partners __item"><button class="list-partners __btn"><a href="voiture.com" target="_blank" class="list-partners __link" title="Lien vers le partenaire voiture">voiture.com</a></button></li>
+			<li class="list-partners __item"><button class="list-partners __btn"><a href="pizza.com" target="_blank" class="list-partners __link" title="Lien vers le partenaire pizza">pizza.com</a></button></li>
+			<li class="list-partners __item"><button class="list-partners __btn"><a href="matoiture.com" target="_blank" class="list-partners __link" title="Lien vers le partenaire toiture">matoiture.com</a></button></li>
+			<li class="list-partners __item"><button class="list-partners __btn"><a href="immobilierseo.com" target="_blank" class="list-partners __link" title="Lien vers le partenaire immobilier">immobilierseo.com</a></button></li>
+		</ul>
 </footer>
 <!-- Footer - END -->
     

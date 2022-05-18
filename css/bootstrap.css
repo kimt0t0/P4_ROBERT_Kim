@@ -1450,6 +1450,7 @@ img {
 .thumbnail a>img,
 .thumbnail>img {
     display: flex;
+    width: auto;
     max-width: 100%;
     height: auto
 }

@@ -124,6 +124,11 @@ a:hover {
     flex-direction: column;
 }
 
+.header-logo {
+    width: 7em;
+    height: auto;
+}
+
 .header-title {
     font-family:  "Merienda", "helvetica";
     font-size: 36px;
@@ -988,12 +993,8 @@ h3 {
     border-color: #484850!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.avif");
 }
 
 @media (max-width: 1024px) {
