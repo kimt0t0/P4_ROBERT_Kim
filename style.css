@@ -374,7 +374,7 @@ a:hover {
 }
 
 .index-nav-link:hover {
-    transition-duration: 600ms ease-in-out;
+    transition: all 600ms ease-in-out;
     color: #DF6D14!important;
 }
 
@@ -416,7 +416,7 @@ a:hover {
     min-height: 3em;
     border-radius: 1em;
     display: flex;
-    transition-duration: 1000ms ease-in-out; /* does not work? */
+    transition: all 1000ms ease-in-out; /* does not work? */
 }
 
 .social-button:hover, .social-button:focus {
@@ -452,7 +452,7 @@ a:hover {
     padding-right: 0.5em;
     font-size: 26px;
     color: #F4661B;
-    transition-duration: 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
 }
 
 .internal-backlink .fa-solid {
@@ -558,7 +558,7 @@ a:hover {
     border-radius: 3em;
     box-shadow: 5px 3px 3px 0px black;
     font-size: 20px;
-    transition-duration: 1000ms ease;
+    transition: all 1000ms ease;
 }
 
 .list-partners.__link:hover, .list-partners.__link:focus {
