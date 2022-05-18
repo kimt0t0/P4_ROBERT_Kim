@@ -33,6 +33,11 @@ main {
     align-content: center;
 }
 
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
 .section.__invitation {
     border-radius: 0;
 }
@@ -356,12 +361,6 @@ a:hover {
     border-radius: 0.15em;
 }
 
-.index-nav-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0;
-}
-
 .index-nav-list {
     list-style-type: none;
     margin: 0;
@@ -446,18 +445,20 @@ a:hover {
     display: flex;
     padding-right: 0.5em;
     font-size: 26px;
-    color: #DF6D14;
-    opacity: 0.85;
+    color: #F4661B;
     transition-duration: all 800ms ease-in-out;
 }
 
 .internal-backlink .fa-solid {
     display: flex;
     align-self: center;
+    background-color:rgba(210, 210, 210, 0.6);
+    padding: 5px 10px;
+    border-radius: 50%;
 }
 
 .internal-backlink:hover {
-    opacity: 1;
+    transform: scale(1.1);
 }
 
 .navbar-brand {
@@ -1059,8 +1060,16 @@ h3 {
 }
 
 @media (max-width: 767px) {
+    main {
+        padding: 0;
+    }
     .header {
-        padding: 4em;
+        height: fit-content;
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
     .section {
         padding: 1em;
@@ -1069,18 +1078,12 @@ h3 {
         margin-bottom: 0;
         padding-bottom: 3em;
     }
+    .section.__contact-form {
+        padding: 0;
+        width: 100%;
+    }
     .__contact-form {
         width: 95%;
-    }
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1101,13 +1104,6 @@ h3 {
         flex-direction: row;
         justify-content: space-around;
     }
-    .header {
-        height: 30em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
     }
@@ -1125,12 +1121,34 @@ h3 {
     #hero-bloc .navbar .nav a {
         color: rgba(255, 255, 255, .6);
     }
+    .fa-solid, .fas {
+        background-color:rgba(210, 210, 210, 0.6);
+        padding: 0.3em 0.5em;
+        border-radius: 50%;
+    }
     .hero {
         padding: 50px 0;
     }
     .hero-nav {
         left: -1px;
         right: -1px;
+    }
+    .index-nav {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .index-nav-list {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar.__social {
+        z-index: 0;
+        bottom: 0;
+        display: flex;
+        align-self: flex-start;
+        background-color: rgb(20, 223, 109);
     }
     .navbar-collapse {
         padding: 0;
@@ -1151,6 +1169,13 @@ h3 {
     .bloc-lg {
         padding: 1em 0.25em;
     }
+    .display-articles {
+        max-width: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     .header-title, 
     .bloc-md {
         padding-left: 0;
@@ -1164,14 +1189,38 @@ h3 {
         padding-left: 0;
         padding-right: 0;
     }
+    .index-secondary-title {
+        font-size: 22px;
+    }
+    .tertiary-title {
+        font-size: 16px;
+    }
+    h4.fourth-title:nth-child(3) {
+        line-height: 1.5;
+    }
+    p.text-center:nth-child(2) {
+        font-style: italic;
+    }          
+    .text-container {
+        height: auto;
+    }
     .blue-background {
         border-radius: 0;
     }
     .a-block {
         padding: 0 10px;
     }
+    .btn {
+        margin: 1.5em;
+    }
+    .social-button {
+        opacity: 1;
+    }
     .btn-dwn {
         display: none;
+    }
+    .contact-display {
+        padding: 0;
     }
     .voffset {
         margin-top: 5px;
@@ -1202,27 +1251,13 @@ h3 {
     .footer ul {
         height: 25em;
     }
-    .fourth-title {
-        margin: 0;
-    }
     .footer .list-partners {
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: center;
+        width: 12em;
     }
     .list-partners.__link {
         color: #FFFFFF;
-    }
-}
-
-@media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
     }
 }
