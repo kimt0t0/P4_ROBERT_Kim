@@ -543,7 +543,7 @@ a:hover {
     line-height: 4.5;
 }
 
-.list-partners.__item {
+.list-partners.__btn {
     width: 10em;
     height: 3em;
     background-color: rgba(19, 87, 141, 0.8);
@@ -554,7 +554,7 @@ a:hover {
     transition-duration: all 1000ms ease;
 }
 
-.list-partners.__item:hover, .list-partners.__item:focus {
+.list-partners.__btn:hover, .list-partners.__btn:focus {
     transform: scale(1.1);
     background-color: rgba(13, 60, 98, 1);
     border: rgba(5, 26, 42, 1) solid 3px;
@@ -1010,12 +1010,53 @@ h3 {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 1500px) and (min-width: 768px) {
+    main {
+        padding: 0;
+    }
     .navbar .nav {
         max-width: 80%
     }
     .nav-center.navbar .nav {
         max-width: 100%
+    }
+    .navbar.__social {
+        z-index: 0;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        align-self: center;
+        align-self: flex-start;
+        background-color: rgb(20, 223, 109);
+    }
+    .navbar-social-list {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .section.__local-presentation {
+        max-width: none;
+        margin: 0;
+    }
+    .blue-background {
+        border-radius: 0;
+    }
+    .__contact-form {
+        width: 95%;
+    }
+    .list-partners {
+        width: 100%;
+    }
+    .list-partners.__btn {
+        font-size: 16px;
+    }
+    .portfolio-article {
+        max-width: 10em;
+    }
+    .text-container {
+        height: 17em;
     }
 }
 
@@ -1094,10 +1135,15 @@ h3 {
         float: none!important;
     }
     .navbar.__social {
-        align-self: center;
+        z-index: 0;
         position: relative;
+        bottom: 0;
         right: 0;
         width: 100%;
+        display: flex;
+        align-self: center;
+        align-self: flex-start;
+        background-color: rgb(20, 223, 109);
     }
     .navbar-social-list {
         width: 80%;
@@ -1142,13 +1188,6 @@ h3 {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-    }
-    .navbar.__social {
-        z-index: 0;
-        bottom: 0;
-        display: flex;
-        align-self: flex-start;
-        background-color: rgb(20, 223, 109);
     }
     .navbar-collapse {
         padding: 0;
