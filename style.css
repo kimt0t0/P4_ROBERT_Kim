@@ -1058,6 +1058,10 @@ h3 {
     .text-container {
         height: 17em;
     }
+    .lightbox-link:hover::before {
+        top: 30%;
+        left: 30%;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -1269,6 +1273,10 @@ h3 {
     }
     form {
         padding: 5px;
+    }
+    .lightbox-link:hover::before {
+        top: 37%;
+        left: 37%;
     }
     .close-lightbox {
         display: inline-block;
