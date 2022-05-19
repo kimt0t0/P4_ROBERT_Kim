@@ -1204,6 +1204,9 @@ h3 {
         justify-content: space-around;
         align-items: center;
     }
+    .index-nav-elt {
+        align-items: center;
+    }
     .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
