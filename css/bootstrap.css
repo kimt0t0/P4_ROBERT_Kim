@@ -1450,8 +1450,8 @@ img {
 .thumbnail a>img,
 .thumbnail>img {
     display: flex;
-    width: 272px;
-    height: 272px;
+    width: 420px;
+    height: 420px;
 }
 
 .img-rounded {
@@ -5119,8 +5119,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent
+    margin-bottom: 20px
 }
 
 @media (min-width:768px) {
@@ -7205,7 +7204,7 @@ button.close {
 }
 
 .modal-body {
-    background-color: rgba(89, 137, 175, 0.8);
+    background-color: rgba(25, 129, 207, 0.1);
     position: relative;
     padding: 15px;
     display: flex;

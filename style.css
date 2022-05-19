@@ -68,7 +68,7 @@ ul {
 
 a,
 button {
-    transition: all .3s ease-in-out;
+    transition: all 400ms ease-in-out;
     outline: none!important;
 }
 
@@ -106,6 +106,18 @@ a:hover {
 .text-container {
     width: auto;
     height: 12em;
+}
+
+.quote {
+    width: 70%;
+    display: flex;
+    align-self: center;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.quote-author {
+    font-weight: 600;
 }
 
 .bloc-lg {
@@ -351,6 +363,16 @@ a:hover {
     padding-left: 0;
 }
 
+.img-responsive {
+    width: 272px;
+    height: 272px;
+}
+
+img#lightbox-image.img-responsive {
+    width: 420px;
+    height: 420px;
+}
+
 .navbar {
     margin-bottom: 0;
     z-index: 10;
@@ -375,48 +397,37 @@ a:hover {
 
 .index-nav-link:hover {
     transition: all 600ms ease-in-out;
-    color: #DF6D14!important;
+    color: #cf712b!important;
 }
-
 .navbar.__social {
-    background-color: rgba( 20 , 223 , 109, 0.8);
-    overflow: hidden;
-    position: fixed;
-    right: 1em;
-    bottom: 2em;
-    width: 4em;
-    height: fit-content;
-    padding: 0.75em 0.5em 0 0.5em;
+    z-index: 0;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    background-color: #cf712b;
 }
-
 .navbar-social-list {
-    padding: 0;
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    justify-items: center;
-    z-index: 1;
+    justify-content: space-around;
+    padding: 0.5em;
+    margin: 0;
 }
-
 .navbar-social-item {
     list-style-type: none;
-    display: flex;
-    justify-items: center;
-    padding: 0.25em;
 }
 
 .social-button {
     border: none;
     background-color: rgb(255, 255, 255);
-    opacity: 0.8;
     min-width: 3em;
     min-height: 3em;
     border-radius: 1em;
     display: flex;
-    transition: all 1000ms ease-in-out; /* does not work? */
+    transition: all 400ms ease-in-out; /* does not work? */
 }
 
 .social-button:hover, .social-button:focus {
@@ -451,14 +462,14 @@ a:hover {
     display: flex;
     padding-right: 0.5em;
     font-size: 26px;
-    color: #F4661B;
-    transition: all 800ms ease-in-out;
+    color: #e88a44;
+    transition: all 400ms ease-in-out;
 }
 
 .internal-backlink .fa-solid {
     display: flex;
     align-self: center;
-    background-color:rgba(210, 210, 210, 0.6);
+    background-color:rgba(220, 220, 220, 0.6);
     padding: 5px 10px;
     border-radius: 50%;
 }
@@ -525,7 +536,7 @@ a:hover {
 
 .footer {
     width: 100%;
-    background-color: #DF6D14;
+    background-color: #f8a376;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -553,17 +564,17 @@ a:hover {
     min-width: 200px;
     height: 50px;
     margin: 0 1.5em;
-    background-color: rgba(19, 87, 141, 0.8);
+    background-color: #1467a5;
     border: rgba(7, 34, 56, 1) solid 3px;
     border-radius: 3em;
     box-shadow: 5px 3px 3px 0px black;
     font-size: 20px;
-    transition: all 1000ms ease;
+    transition: all 400ms ease;
 }
 
 .list-partners.__link:hover, .list-partners.__link:focus {
     transform: scale(1.1);
-    background-color: rgba(13, 60, 98, 1);
+    background-color: #1981CF;
     border: rgba(5, 26, 42, 1) solid 3px;
 }
 
@@ -702,7 +713,7 @@ button {
     right: 20px;
     opacity: 0;
     z-index: 500;
-    transition: all .3s ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 .scrollToTop span {
@@ -727,7 +738,7 @@ a[data-lightbox] {
     font-size: 32px;
     font-weight: 100;
     border-radius: 50%;
-    background: rgba( 223 , 109 , 20, .7);
+    background: rgba(207, 113, 43, 0.7);
     color: #FFFFFF;
     position: absolute;
     top: 40%;
@@ -762,7 +773,7 @@ a[data-lightbox]:hover img,a[data-lightbox]:focus img  {
     position: absolute;
     top: 1em;
     line-height: 2;
-    color: #FFF;
+    color: #464447;
     background: rgba(0, 0, 0, .5);
 }
 
@@ -786,7 +797,6 @@ a[data-lightbox]:hover img,a[data-lightbox]:focus img  {
 .next-lightbox:hover,
 .prev-lightbox:hover  {
     transform: scale(1.1);
-    opacity: 1;
 }
 
 .next-lightbox,
@@ -801,11 +811,11 @@ a[data-lightbox]:hover img,a[data-lightbox]:focus img  {
     top: 45%;
     font-size: 20px;
     color: #FFFFFF;
-    background-color: #DF6D14;
+    background-color: #cf712b;
     box-shadow: 0px 4px 9px rgb(0, 0, 0);
     opacity: 1;
     border-radius: 1em;
-    transition: all 600ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 .next-lightbox {
@@ -824,7 +834,7 @@ a[data-lightbox]:hover img,a[data-lightbox]:focus img  {
 
 .snapshot-lb .lightbox-caption {
     padding: 0;
-    color: #FFFFFF;
+    color: #464447;
     background: none;
 }
 
@@ -935,7 +945,7 @@ h3 {
 }
 
 .blue-background {
-    background-color: rgba(19, 87, 141, 0.8);
+    background-color: #1981CF;
     padding: 2em 1.5em;
     border-radius: 1em;
 }
@@ -954,19 +964,19 @@ h3 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #cf712b;
     transition: all 1000ms ease;
 }
 
 .btn-atomic-tangerine {
-    background: #DF6D14;
+    background: #cf712b;
     color: #FFFFFF!important;
     box-shadow: 5px 3px 3px 0px black;
 }
 
 .btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
     transform: scale(1.1);
-    background: #BA5D00!important;
+    background: #e67e30!important;
     color: #FFFFFF!important;
 }
 
@@ -979,15 +989,15 @@ h3 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #aa4712!important;
 }
 
 .ltc-orange-strong {
-    color: #DF6D14;
+    color: #aa4712;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #db5b18!important;
 }
 
 .icon-dark-slate-blue {
@@ -1023,22 +1033,6 @@ h3 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
-    .navbar.__social {
-        z-index: 0;
-        position: relative;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        display: flex;
-        align-self: center;
-        align-self: flex-start;
-        background-color: rgb(20, 223, 109);
-    }
-    .navbar-social-list {
-        width: 80%;
-        flex-direction: row;
-        justify-content: space-around;
-    }
     .section.__local-presentation {
         max-width: none;
         margin: 0;
@@ -1067,6 +1061,10 @@ h3 {
         width: 10em;
         height: auto;
     }
+    #lightbox-image {
+        width: 420px;
+        height: 420px;
+       }       
     .text-container {
         height: 17em;
     }
