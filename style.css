@@ -1108,6 +1108,9 @@ h3 {
 }
 
 @media (max-width: 767px) {
+    body {
+        font-size: 20px;
+    }
     main {
         padding: 0;
     }
@@ -1159,6 +1162,11 @@ h3 {
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
+    }
+    .index-nav-elt {
+        display: flex;
+        min-width: 48px;
+        min-height: 48px;
     }
     .dropdown .dropdown a .caret {
         float: none;
@@ -1221,6 +1229,31 @@ h3 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .portfolio-article {
+        display: flex;
+        align-items: center;
+    }
+    img#lightbox-image.img-responsive {
+        width: fit-content;
+        height: fit-content;
+    }
+    .lightbox-caption {
+        text-align: center;
+    }
+    .prev-lightbox, .next-lightbox {
+        top: auto;
+        bottom: 1%;
+    }
+    .prev-lightbox {
+        left: 1%;
+    }
+    .next-lightbox {
+        right: 1%;
+    }
+    .close-lightbox {
+        top: 0.25em;
+        right: 0.25em;
     }
     .header-title, 
     .bloc-md {
