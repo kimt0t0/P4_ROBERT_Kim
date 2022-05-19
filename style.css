@@ -237,6 +237,7 @@ img#lightbox-image.img-responsive {
     display: flex;
     align-self: center;
     background-color:#CF712B;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 5px 10px;
     border-radius: 50%;
 }
@@ -542,6 +543,7 @@ h3 {
 .btn-atomic-tangerine {
     background: #cf712b;
     color: #FFFFFF!important;
+    border: 1px solid rgba(0, 0, 0, 0.2);;
     box-shadow: 5px 3px 3px 0px black;
 }
 
