@@ -293,25 +293,6 @@ img#lightbox-image.img-responsive {
         margin: 0;
         padding: 2em;
     }
-    .navbar-header {
-        display: flex;
-    }
-    .index-nav {
-        width: auto;
-        height: auto;
-        align-items: center;
-    }
-    .index-nav-list {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .index-nav-elt {
-        display: flex;
-        align-items: center;
-        min-width: 48px;
-        min-height: 48px;
-    }
 }
 
 .tertiary-title {
@@ -655,6 +636,25 @@ h3 {
     .bloc-group .bloc {
         display: block;
         width: 100%;
+    }
+    .navbar-header {
+        display: flex;
+    }
+    .index-nav {
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+    .index-nav-list {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .index-nav-elt {
+        display: flex;
+        align-items: center;
+        min-width: 48px;
+        min-height: 48px;
     }
 }
 
