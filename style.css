@@ -404,7 +404,7 @@ a[data-lightbox]:hover img,a[data-lightbox]:focus img  {
     box-shadow: 0px 4px 9px rgb(0, 0, 0);
     border-radius: 0.25em;
     opacity: 0.85;
-    transform: all 600ms ease-in-out;
+    transition: all 600ms ease-in-out;
 }
 
 .close-lightbox:hover,
