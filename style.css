@@ -877,12 +877,11 @@ h3 {
         align-items: center;
     }
     .footer ul {
-        height: 25em;
+        height: 15em;
     }
     .footer .list-partners {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width: 12em;
     }
 }
