@@ -271,9 +271,8 @@ img#lightbox-image.img-responsive {
     min-width: 200px;
     height: 50px;
     margin: 0 1.5em;
-    background-color: #C8AD7F ;
-    color: #761b4f;
-    border: #0c3e21 solid 3px;
+    background-color: rgba(200, 173, 127, 0.85) ;
+    color: black;
     border-radius: 3em;
     box-shadow: 5px 3px 3px 0px black;
     font-size: 20px;
@@ -282,8 +281,7 @@ img#lightbox-image.img-responsive {
 
 .list-partners.__link:hover, .list-partners.__link:focus {
     transform: scale(1.1);
-    background-color: #6ADD9B;
-    border: rgba(5, 26, 42, 1) solid 3px;
+    background-color: rgba(200, 173, 127, 1);
 }
 
 @media (min-width: 768px) {
